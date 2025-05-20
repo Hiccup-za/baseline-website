@@ -136,4 +136,17 @@ body {
     color: #111;
     box-shadow: 0 6px 24px rgba(0,0,0,0.13);
     opacity: 1;
+}
+@media (max-width: 600px) {
+  .hero-header {
+    flex-direction: column !important;
+    gap: 1.2rem !important;
+    align-items: center !important;
+  }
+  .hero-logo {
+    margin-bottom: 0.5rem;
+  }
+  .hero-title-block {
+    text-align: center;
+  }
 } 
