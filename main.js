@@ -1,6 +1,6 @@
 // Typing effect for baseline-cli demo
 const lines = [
-    '$ baseline create',
+    '$ baseline capture',
     '$ baseline compare'
 ];
 const typingEl = document.getElementById('cli-typing');
