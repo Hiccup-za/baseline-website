@@ -37,4 +37,16 @@ function typeLine() {
         }
     }
 }
-typeLine(); 
+typeLine();
+
+// Fetch and display Umami stats
+async function showUmamiStats() {
+  try {
+    const res = await fetch('/api/umami-stats');
+    const data = await res.json();
+    document.getElementById('umami-today').textContent = data.visitors?.value ?? 'N/A';
+  } catch (e) {
+    document.getElementById('umami-today').textContent = 'N/A';
+  }
+}
+showUmamiStats(); 
